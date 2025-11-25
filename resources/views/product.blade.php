@@ -15,6 +15,9 @@
     <p>{{__('messages.language_choice')}}</p>
     <a href="{{ route('product', ['lang' => 'id']) }}">🇮🇩 Bahasa Indonesia</a> |
     <a href="{{ route('product', ['lang' => 'en']) }}">🇬🇧 English</a>
+    <p>
+        {{trans_choice('courses.seats', $seatsCount, ['count' => $seatsCount])}}
+    </p>
 </body>
 
 </html>
